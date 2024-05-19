@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import { App } from "./App";
 
 const sv3 = (
   <svg
@@ -34,7 +35,6 @@ const SpecialButton = ({ text }) => {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.Fragment>
-    <SpecialButton text="hla12" />
-
-    </React.Fragment>
+    <App />
+  </React.Fragment>
 );
