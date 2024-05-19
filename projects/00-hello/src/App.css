@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  min-width: 180px;
 }
 .tw-followCard-info {
   display: flex;
@@ -44,24 +45,34 @@
   font-weight: bolder;
   cursor: pointer;
   transition-duration: 200ms;
+  min-width: 100px;
 }
-.tw-followCard-btn:hover{
+.tw-followCard-btn:hover {
   background-color: dodgerblue;
-
 }
 .tw-followCard-btn.is-following {
   background-color: rgba(30, 143, 255, 0.164);
   border: 1px solid dodgerblue;
   color: dodgerblue;
 }
-.tw-followCard-btn.is-following:hover{
+.tw-followCard-btn.is-following:hover {
   background-color: rgba(255, 0, 0, 0.226);
   border: 1px solid red;
   color: red;
 }
 
-.app{
+.app {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.tw-followCard-stopFollow {
+  display: none;
+}
+.tw-followCard-btn.is-following:hover .tw-followCard-stopFollow {
+  display: inline-block;
+}
+.tw-followCard-btn.is-following:hover .tw-followCard-btn-text {
+  display: none;
 }
